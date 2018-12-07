@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TNT.HtmlToPdf</name>
+    </assembly>
+    <members>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.PageSize">
+            <summary>
+            设置页面大小.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.PageWidth">
+            <summary>
+            设置页面宽度，单位毫米 mm.
+            </summary>
+            <remarks>Has priority over <see cref="P:TNT.HtmlToPdf.AsPdfResultBase.PageSize"/> but <see cref="P:TNT.HtmlToPdf.AsPdfResultBase.PageHeight"/> has to be also specified.</remarks>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.PageHeight">
+            <summary>
+            设置页面高度，单位毫米 mm.
+            </summary>
+            <remarks>Has priority over <see cref="P:TNT.HtmlToPdf.AsPdfResultBase.PageSize"/> but <see cref="P:TNT.HtmlToPdf.AsPdfResultBase.PageWidth"/> has to be also specified.</remarks>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.PageOrientation">
+            <summary>
+            设置页面方向，单位毫米 mm.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.PageMargins">
+            <summary>
+            设置页面边距.
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsPdfResultBase.WkhtmlConvert(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="switches"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsPdfResultBase.GetContentType">
+            <summary>
+            获取文档类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.WkhtmltopdfPath">
+            <summary>
+            wkhtmltopdf 库路径.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.IsLowQuality">
+            <summary>
+            指示PDF是否应该以较低的质量生成.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.Copies">
+            <summary>
+            要打印到PDF文件中的拷贝数.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsPdfResultBase.IsGrayScale">
+            <summary>
+            指示是否应该以灰度级生成PDF.
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsPdfResultBase.GetConvertOptions">
+            <summary>
+            获取转换配置选项
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TNT.HtmlToPdf.AsResultBase">
+            <summary>
+            定义的 ViewResult 基类
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsResultBase.#ctor">
+            <summary>
+            构造实例
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.FileName">
+            <summary>
+            这将作为生成的PDF文件的名称发送到浏览器.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.WkhtmlPath">
+            <summary>
+            wkhtmltopdf\wkhtmltoimage 的路径.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.CookieName">
+            <summary>
+            由表单认证使用的身份验证cookie的自定义名称.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.FormsAuthenticationCookieName">
+            <summary>
+            由表单认证使用的身份验证cookie的自定义名称.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.CustomHeaders">
+            <summary>
+            设置自定义 headers.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.Cookies">
+            <summary>
+            设置 cookies.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.Post">
+            <summary>
+            Sets post values.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.IsJavaScriptDisabled">
+            <summary>
+            指示页面是否可以运行JavaScript.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.MinimumFontSize">
+            <summary>
+            最小字体大小.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.Proxy">
+            <summary>
+            设置代理服务器.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.UserName">
+            <summary>
+            HTTP认证用户名.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.Password">
+            <summary>
+            HTTP认证密码.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.CustomSwitches">
+            <summary>
+            如果需要另一个当前不支持的开关，则使用此方法.
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.SaveOnServerPath">
+            <summary>
+            在服务器端保存的路径
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.AsResultBase.ContentDisposition">
+            <summary>
+            文档存在形式
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsResultBase.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)">
+            <summary>
+            获取Url
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsResultBase.GetConvertOptions">
+            <summary>
+            将OpthFraveGrar属性返回为可以传递给WKHTMLTOPDF二进制的一行.
+            </summary>
+            <returns>可以直接传递给WKHTMLTOPDF二进制的命令行参数.</returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.AsResultBase.CallTheDriver(Microsoft.AspNetCore.Mvc.ActionContext)">
+            <summary>
+            调用生成器
+            </summary>
+            <param name="context">action 上下文</param>
+            <returns></returns>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.Size">
+            <summary>
+            页面大小.
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A0">
+            <summary>
+            841 x 1189 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A1">
+            <summary>
+            594 x 841 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A2">
+            <summary>
+            420 x 594 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A3">
+            <summary>
+            297 x 420 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A4">
+            <summary>
+            210 x 297 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A5">
+            <summary>
+            148 x 210 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A6">
+            <summary>
+            105 x 148 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A7">
+            <summary>
+            74 x 105 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A8">
+            <summary>
+            52 x 74 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.A9">
+            <summary>
+            37 x 52 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B0">
+            <summary>
+            1000 x 1414 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B1">
+            <summary>
+            707 x 1000 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B2">
+            <summary>
+            500 x 707 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B3">
+            <summary>
+            353 x 500 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B4">
+            <summary>
+            250 x 353 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B5">
+            <summary>
+            176 x 250 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B6">
+            <summary>
+            125 x 176 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B7">
+            <summary>
+            88 x 125 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B8">
+            <summary>
+            62 x 88 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B9">
+            <summary>
+            33 x 62 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.B10">
+            <summary>
+            31 x 44 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.C5E">
+            <summary>
+            163 x 229 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Comm10E">
+            <summary>
+            105 x 241 mm - 美国通用10信封
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Dle">
+            <summary>
+            110 x 220 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Executive">
+            <summary>
+            190.5 x 254 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Folio">
+            <summary>
+            210 x 330 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Ledger">
+            <summary>
+            431.8 x 279.4 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Legal">
+            <summary>
+            215.9 x 355.6 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Letter">
+            <summary>
+            215.9 x 279.4 mm
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Size.Tabloid">
+            <summary>
+            279.4 x 431.8 mm
+            </summary>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.Orientation">
+            <summary>
+            纸张方向.
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Orientation.Landscape">
+            <summary>
+            横向
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Orientation.Portrait">
+            <summary>
+            纵向
+            </summary>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.ImageFormat">
+            <summary>
+            图像输出格式
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.ImageFormat.jpeg">
+            <summary>
+            jpeg
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.ImageFormat.png">
+            <summary>
+            png
+            </summary>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.ContentDisposition">
+            <summary>
+            内容配置
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.ContentDisposition.Attachment">
+            <summary>
+            内容作为附件存在，默认的
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.ContentDisposition.Inline">
+            <summary>
+            内容以内联方式存在
+            </summary>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.Margins">
+            <summary>
+            页边距选项
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Margins.Bottom">
+            <summary>
+            底部页边距，单位mm.
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Margins.Left">
+            <summary>
+            左边页边距，单位mm.
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Margins.Right">
+            <summary>
+            右边页边距，单位mm.
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.Options.Margins.Top">
+            <summary>
+            顶部页边距，单位mm.
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.Options.Margins.#ctor">
+            <summary>
+            构造页边距设置
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.Options.Margins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            构造页边距设置.
+            </summary>
+            <param name="top">顶部页边距，单位mm.</param>
+            <param name="right">右边页边距，单位mm.</param>
+            <param name="bottom">底部页边距，单位mm.</param>
+            <param name="left">左边页边距，单位mm.</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.Options.Margins.ToString">
+            <summary>
+            转化为字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TNT.HtmlToPdf.Options.OptionFlag">
+            <summary>
+            配置选项标识，用来标识用在 Wkhtmltopdf 工具内的命令参数标识
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.Options.OptionFlag.Name">
+            <summary>
+            标识名称
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.Options.OptionFlag.#ctor(System.String)">
+            <summary>
+            通过名称构造一个新实例
+            </summary>
+            <param name="name">标识名称</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.RotativaConfiguration.Setup(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String)">
+            <summary>
+            设置 wkhtmltopdf 路径环境
+            </summary>
+            <param name="env">IHostingEnvironment  对象</param>
+            <param name="wkhtmltopdfRelativePath">可选项. wkhtmltopdf.exe 相对目录的路径. 默认是 "/Rotativa". 在此下载 https://wkhtmltopdf.org/downloads.html</param>
+        </member>
+        <member name="T:TNT.HtmlToPdf.ViewAsPdf">
+            <summary>
+            Pdf 格式的 IActionResult
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.ViewAsPdf.ViewName">
+            <summary>
+            视图名称
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.ViewAsPdf.MasterName">
+            <summary>
+            模板名称
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.ViewAsPdf.Model">
+            <summary>
+            视图模型
+            </summary>
+        </member>
+        <member name="P:TNT.HtmlToPdf.ViewAsPdf.ViewData">
+            <summary>
+            视图数据
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)">
+            <summary>
+            实例化一个 Pdf 格式的 IActionResult
+            </summary>
+            <param name="viewData">视图数据</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.#ctor(System.String,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)">
+            <summary>
+            实例化一个 Pdf 格式的 IActionResult
+            </summary>
+            <param name="viewName">视图名称</param>
+            <param name="viewData">视图数据</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.#ctor(System.Object,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)">
+            <summary>
+            实例化一个 Pdf 格式的 IActionResult
+            </summary>
+            <param name="model">视图模型</param>
+            <param name="viewData">视图数据</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.#ctor(System.String,System.Object,Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary)">
+            <summary>
+            实例化一个 Pdf 格式的 IActionResult
+            </summary>
+            <param name="viewName">视图名称</param>
+            <param name="model">视图模型</param>
+            <param name="viewData">视图数据</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.#ctor(System.String,System.String,System.Object)">
+            <summary>
+            实例化一个 Pdf 格式的 IActionResult
+            </summary>
+            <param name="viewName">视图名称</param>
+            <param name="masterName">模板名称</param>
+            <param name="model">视图模型</param>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.GetUrl(Microsoft.AspNetCore.Mvc.ActionContext)">
+            <summary>
+            获取Url
+            </summary>
+            <param name="context">action 上下文</param>
+            <returns></returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.GetView(Microsoft.AspNetCore.Mvc.ActionContext,System.String,System.String)">
+            <summary>
+            获取视图
+            </summary>
+            <param name="context">action 上下文</param>
+            <param name="viewName">视图名称</param>
+            <param name="masterName">模板名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.ViewAsPdf.CallTheDriver(Microsoft.AspNetCore.Mvc.ActionContext)">
+            <summary>
+            调用驱动程序
+            </summary>
+            <param name="context">action 上下文</param>
+            <returns></returns>
+        </member>
+        <member name="T:TNT.HtmlToPdf.WkhtmlDriver">
+            <summary>
+            Wkhtml 生成器
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.WkhtmlDriver.Convert(System.String,System.String,System.String,System.String)">
+            <summary>
+            将给定URL或HTML字符串转换为PDF.
+            </summary>
+            <param name="wkhtmlPath">wkthmltopdf\wkthmltoimage 库的路径</param>
+            <param name="switches">传递的命令参数.</param>
+            <param name="html">包含应转换为PDF的HTML代码的字符串.</param>
+            <param name="wkhtmlExe"></param>
+            <returns>作为字节数组的PDF.</returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.WkhtmlDriver.SpecialCharsEncode(System.String)">
+            <summary>
+            编码所有特殊字符
+            </summary>
+            <param name="text">Html text</param>
+            <returns>特殊字符编码的HTML</returns>
+        </member>
+        <member name="T:TNT.HtmlToPdf.WkhtmltopdfDriver">
+            <summary>
+            Wkhtmltopdf 生成器
+            </summary>
+        </member>
+        <member name="F:TNT.HtmlToPdf.WkhtmltopdfDriver.wkhtmlExe">
+            <summary>
+            wkhtmltopdf 至在 windows 环境下有exe扩展名.
+            </summary>
+        </member>
+        <member name="M:TNT.HtmlToPdf.WkhtmltopdfDriver.ConvertHtml(System.String,System.String,System.String)">
+            <summary>
+            将HTML字符串转换为PDF.
+            </summary>
+            <param name="wkhtmltopdfPath">wkthmltopdf 路径.</param>
+            <param name="switches">传递的命令参数.</param>
+            <param name="html">包含应转换为PDF的HTML代码的字符串.</param>
+            <returns>作为字节数组的PDF.</returns>
+        </member>
+        <member name="M:TNT.HtmlToPdf.WkhtmltopdfDriver.Convert(System.String,System.String)">
+            <summary>
+            将给定URL转换成PDF.
+            </summary>
+            <param name="wkhtmltopdfPath">wkthmltopdf 路径.</param>
+            <param name="switches">传递的命令参数.</param>
+            <returns>作为字节数组的PDF.</returns>
+        </member>
+    </members>
+</doc>

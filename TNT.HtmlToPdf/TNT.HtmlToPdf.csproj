@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.2.0</Version>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <RepositoryUrl>https://github.com/dodu2014/TNT.HtmlToPdf</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dodu2014/TNT.HtmlToPdf</PackageProjectUrl>
+    <Company>时光网络科技</Company>
+    <Authors>Dodu</Authors>
+    <Description>在 Asp.Net Core 轻松创建 PDF</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>PDF htmtopad asp.netcore netcore tnt</PackageTags>
+    <Copyright>©2018 时光网络科技</Copyright>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\Documents\文档\GitHub\Rotativa.AspNetCore\TNT.HtmlToPdf\TNT.HtmlToPdf.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.1" />
+  </ItemGroup>
+
+</Project>
